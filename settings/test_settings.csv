@@ -1,0 +1,7 @@
+token_type,tokenizer_type,composition_type,dummy_letter,nsmc_min_count,nsmc_max_len
+eojeol,none,composed,False,1,25
+eojeol,none,decomposed_simple,True,1,25
+morpheme,mecab_fixed,composed,False,2,55
+morpheme,mecab_fixed,decomposed_simple,True,2,55
+morpheme,mecab_fixed,decomposed_lexical,True,2,55
+morpheme,mecab_fixed,decomposed_grammatical,True,2,55

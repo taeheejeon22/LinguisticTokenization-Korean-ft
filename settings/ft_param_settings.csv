@@ -1,0 +1,7 @@
+token_type,tokenizer_type,composition_type,dummy_letter,dim,ws,minCount,minn,maxn,loss,lr
+eojeol,none,composed,False,300,5,10,1,6,ns,0.05
+eojeol,none,decomposed_simple,True,300,5,10,1,6,ns,0.05
+morpheme,mecab_fixed,composed,False,300,7,20,1,6,ns,0.05
+morpheme,mecab_fixed,decomposed_simple,True,300,7,20,1,6,ns,0.05
+morpheme,mecab_fixed,decomposed_lexical,True,300,7,20,1,6,ns,0.05
+morpheme,mecab_fixed,decomposed_grammatical,True,300,7,20,1,6,ns,0.05
