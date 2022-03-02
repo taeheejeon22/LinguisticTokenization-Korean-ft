@@ -156,7 +156,16 @@ python scripts/test_NSMC.py --ft_models_path=./models --test_settings=./settings
   ```
 
 
-### 3) tensorboard에서 학습 결과 확인
+### 3) 테스트 결과 평균
+```bash
+python scripts/average_results.py --results_path=./test_results/sim_anal
+python scripts/average_results.py --results_path=./test_results/NSMC
+```
+- 모델 인스턴스들(기본 5개)의 학습 결과 평균
+- test_results/average 위치에 저장됨
+
+
+### 4) (optional) tensorboard에서 학습 결과 확인
 ```bash
 tensorboard --logdir=log/NSMC/
 ```
@@ -178,8 +187,3 @@ http://127.0.0.1:16006  # 로컬의 16006 포트에서 수신
 
 
 
-### 4) 테스트 결과 평균
-```bash
-python scripts/average_results.py --results_path=./test_results/sim_anal
-python scripts/average_results.py --results_path=./test_results/NSMC
-```
