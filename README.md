@@ -74,7 +74,7 @@ python tokenization/mecab_tokenization.py --corpus_path=../namuwiki_20210301_pre
 python tokenization/mecab_tokenization.py --corpus_path=../namuwiki_20210301_preprocessed_sampled.txt --token_type=morpheme --tokenizer_type=mecab_fixed --decomposition_type=decomposed_grammatical --dummy_letter=⊸ --threads=12
 ```
 - ./pretrain_corpus/tokenized 에 저장됨
-- 12~16 스레드 사용 시 1~2 시간 정도 소요
+- 12-16 스레드 사용 시 1-2 시간 정도 소요
 
 #### 사용법
 - corpus_paht: 1.에서 만들어진 코퍼스 파일 경로
@@ -99,7 +99,7 @@ python tokenization/mecab_tokenization.py --corpus_path=../namuwiki_20210301_pre
 ```bash
 python scripts/train_fasttext.py --parameter_settings=./settings/ft_param_settings.csv --iteration=5 --threads=12
 ```
-- 12~16 스레드 사용 + iteration 5 설정 시 1~2일 소요
+- 12-16 스레드 사용 + iteration 5 설정 시 1-2일 소요
 
 #### 사용법
 - parameter_settings: fastText 세팅별 임베딩 학습 하이퍼 파라미터 기록한 파일 경로. 파일을 열어 하이퍼 파라미터 직접 설정 가능
