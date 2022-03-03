@@ -45,7 +45,7 @@ python preprocessing/namuwiki_preprocessing.py --corpus_path=../namuwiki_2021030
 - 12~16 스레드 사용 시 2~3 시간 정도 소요
 
 #### 사용법
-- corpus_path: json 파일 경로. 자신이 다운로드한 파일의 json 파일의 이름으로 변경할 것
+- corpus_path: json 파일 경로. 자신이 다운로드한 json 파일의 경로로 수정할 것
 - output_path: 결과 파일 저장 경로. 설정하지 않으면 corpus_path와 동일한 곳에 저장됨 (파일명 끝부분이 _preprocessed.txt로 변경)
 - threads: 사용할 스레드 수 (default: 12)
 
