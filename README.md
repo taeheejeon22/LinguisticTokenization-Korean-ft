@@ -6,7 +6,7 @@
     * 최소: 64 GB (코퍼스 크기 문제로 인해 Out of Memory 문제 발생할 수 있음)
     * 권장: 128 GB 이상
   - CPU: 12 스레드 이상 CPU 이용 권장 (예: AMD Ryzen 5 3600X, Intel Core i5-12400)
-  - GPU: CPU의 다중 작업 성능이 충분히 좋으면(대략 Intel Core i9-9900K 급 이상) 없어도 무방함. 사용한다면 GeForce 10 시리즈 이상 이용을 권장하며, 간단한 모델을 이용하므로 VRAM이 큰 하이엔드 모델이 아니어도 됨. 
+  - GPU: CPU의 다중 작업 성능이 충분히 좋으면(대략 Intel Core i9-9900K 급 이상) 없어도 무방함. 사용한다면 GeForce 10 시리즈 이상 이용을 권장하며, 간단한 모델을 이용하므로 VRAM이 큰 하이엔드 모델이 아니어도 됨 
 
 
 # **튜토리얼**
@@ -42,7 +42,7 @@ https://mu-star.net/wikidb
 ```bash
 python preprocessing/namuwiki_preprocessing.py --corpus_path=../namuwiki_20210301.json --threads=12
 ```
-- 12~16 스레드 사용 시 2~3 시간 정도 소요
+- 12-16 스레드 사용 시 2-3 시간 정도 소요
 
 #### 사용법
 - corpus_path: json 파일 경로. 자신이 다운로드한 json 파일의 경로로 수정할 것
@@ -121,15 +121,15 @@ python scripts/test_sim_syn.py --ft_models_path=./models --test_settings=./setti
 - ft_models_path: 2.에서 학습한 모델들 저장된 경로
 - test_settings: fastText 세팅별 테스트 하이퍼 파라미터 기록한 파일 경로
 - use_gensim: gensim 라이브러리 사용 여부
-  * --use_gensim: gensim 라이브러리 사용
-  * 아무 입력 안 함: fastText 공식라이브러리 사용 
+  * --use_gensim: gensim 라이브러리 사용하여 fastText 모델 로드
+  * 아무 입력 안 함: fastText 공식라이브러리 사용하여 fastText 모델 로드
 
 
 ### 2) 감성 분석 (NSMC)
 ```bash
 python scripts/test_NSMC.py --ft_models_path=./models --test_settings=./settings/test_settings.csv --use_pretrained_embedding --mask_zero 
 ```
-- 모델 인스턴스 5개인 경우(2.에서 iteration 5로 설정), CPU 사용 시 약 1~2일 소요, GPU 1개 사용 시 12시간 내외 소요
+- 모델 인스턴스 5개인 경우(2.에서 iteration 5로 설정), CPU 사용 시 1-2일 소요, GPU 1개 사용 시 12시간 내외 소요
 
 #### 사용법
 - ft_models_path: 2.에서 학습한 모델들 저장된 경로
@@ -151,7 +151,7 @@ python scripts/test_NSMC.py --ft_models_path=./models --test_settings=./settings
   * --use_multi_gpus: GPU를 2개 이상 사용
   * 아무 입력 안 함: GPU 1개 사용
   * 실질적인 속도 향상을 위해서는 GPU 수(N개)만큼 batch size를 N배 해 주어야 함. 설정한 batch를 GPU N개에서 나누어 처리하는 방식이므로, batch size가 그대로이면 속도 향상 없음. (예: 1 GPU 학습 시 batch size 128이면, 2 GPU 학습 시 batch size 256으로 설정)
-  * GPU가 여러 개인 환경에서 1개만 쓰려면, 위 코드 앞에 CUDA_VISIBLE_DEVICES=0 과 같이 사용할 GPU의 인덱스를 명시해야 함. 하지 않으면 TensorFlow가 모든 GPU를 로드하므로, 실제로 학습을 하지 않는 GPU가 있더라도 이를 다른 용도로 쓰지 못함.
+  * GPU가 여러 개인 환경에서 1개만 쓰려면, 위 코드 앞에 CUDA_VISIBLE_DEVICES=0 과 같이 사용할 GPU의 인덱스를 명시해야 함. 하지 않으면 TensorFlow가 모든 GPU를 로드하므로, 실제로 학습을 하지 않는 GPU가 있더라도 이를 다른 용도로 쓰지 못함
   ```bash
   CUDA_VISIBLE_DEVICES=0 python scripts/test_NSMC.py --ft_models_path=./models --test_settings=./settings/test_settings.csv --use_pretrained_embedding --mask_zero
   ```
@@ -163,7 +163,7 @@ python scripts/average_results.py --results_path=./test_results/sim_anal
 python scripts/average_results.py --results_path=./test_results/NSMC
 ```
 - 모델 인스턴스들(기본 5개)의 학습 결과 평균
-- test_results/average 위치에 저장됨
+- test_results/average 경로에 저장됨
 
 
 ### 4) (optional) tensorboard에서 학습 결과 확인
