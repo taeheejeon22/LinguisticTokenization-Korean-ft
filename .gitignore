@@ -2,9 +2,6 @@
 .DS_Store
 
 
-# corpus
-corpus/tokenized
-
 # fasttext model
 *.bin
 models/*

@@ -4,7 +4,7 @@ import re
 import unicodedata
 
 from itertools import chain
-from tokenization._mecab import Mecab
+from _mecab import Mecab
 from soynlp.hangle import compose, decompose, character_is_korean, character_is_complete_korean, character_is_moum, character_is_jaum
 
 doublespace_pattern = re.compile('\s+')

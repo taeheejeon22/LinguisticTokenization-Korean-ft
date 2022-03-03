@@ -45,7 +45,7 @@ python preprocessing/namuwiki_preprocessing.py --corpus_path=../namuwiki_2021030
 - 12~16 스레드 사용 시 2~3 시간 정도 소요
 
 #### 사용법
-- corpus_path: json 파일 경로
+- corpus_path: json 파일 경로. 자신이 다운로드한 파일의 json 파일의 이름으로 변경할 것
 - output_path: 결과 파일 저장 경로. 설정하지 않으면 corpus_path와 동일한 곳에 저장됨 (파일명 끝부분이 _preprocessed.txt로 변경)
 - threads: 사용할 스레드 수 (default: 12)
 
@@ -73,11 +73,12 @@ python tokenization/mecab_tokenization.py --corpus_path=../namuwiki_20210301_pre
 python tokenization/mecab_tokenization.py --corpus_path=../namuwiki_20210301_preprocessed_sampled.txt --token_type=morpheme --tokenizer_type=mecab_fixed --decomposition_type=decomposed_lexical --dummy_letter=⊸ --threads=12
 python tokenization/mecab_tokenization.py --corpus_path=../namuwiki_20210301_preprocessed_sampled.txt --token_type=morpheme --tokenizer_type=mecab_fixed --decomposition_type=decomposed_grammatical --dummy_letter=⊸ --threads=12
 ```
+- KoNLPy의 Mecab-ko 모듈을 수정한 파일(./_mecab.py) 이용해 토큰화
 - ./pretrain_corpus/tokenized 에 저장됨
 - 12-16 스레드 사용 시 1-2 시간 소요
 
 #### 사용법
-- corpus_paht: 1.에서 만들어진 코퍼스 파일 경로
+- corpus_paht: 1.에서 만들어진 코퍼스 파일 경로. 1. 3)에서 만들어진 파일의 경로를 확인한 후 그에 맞게 수정해 사용할 것
 - token_type: 토큰화 단위
   * eojeol: 어절
   * morpheme: 형태소
@@ -103,7 +104,7 @@ python scripts/train_fasttext.py --parameter_settings=./settings/ft_param_settin
 
 #### 사용법
 - parameter_settings: fastText 세팅별 임베딩 학습 하이퍼 파라미터 기록한 파일 경로. 파일을 열어 하이퍼 파라미터 직접 설정 가능
-- iteration: 1세팅당 임베딩 모델 몇 회 학습할지. 무작위 초기화 파라미터로 인한 우연적인 결과 막기 위함. (default = 5)
+- iteration: 1세팅당 임베딩 모델 몇 회 학습할지. 무작위 초기화 파라미터로 인한 우연적인 결과 막기 위함 (default = 5)
 - threads: 사용할 스레드 수 (default = 12)
 - corpus_path: 코퍼스 파일들이 저장되어 있는 경로 (default = "./corpus/tokenized/")
 

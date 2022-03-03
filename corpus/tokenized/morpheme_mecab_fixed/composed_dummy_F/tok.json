@@ -1,0 +1,15 @@
+{
+    "corpus_path": "../sample_corpus.txt",
+    "token_type": "morpheme",
+    "tokenizer_type": "mecab_fixed",
+    "decomposition_type": "composed",
+    "dummy_letter": "",
+    "threads": 12,
+    "space_symbol": "",
+    "grammatical_symbol": [
+        "",
+        ""
+    ],
+    "lexical_grammatical": false,
+    "nfd": false
+}

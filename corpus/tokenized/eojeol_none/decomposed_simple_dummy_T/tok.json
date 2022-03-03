@@ -1,0 +1,15 @@
+{
+    "corpus_path": "../sample_corpus.txt",
+    "token_type": "eojeol",
+    "tokenizer_type": "none",
+    "decomposition_type": "decomposed_simple",
+    "dummy_letter": "\u22b8",
+    "threads": 12,
+    "space_symbol": "",
+    "grammatical_symbol": [
+        "",
+        ""
+    ],
+    "lexical_grammatical": false,
+    "nfd": false
+}
