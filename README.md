@@ -117,6 +117,8 @@ python scripts/train_fasttext.py --parameter_settings=./settings/ft_param_settin
 
 ## 3. test
 ### 1) 유사도, 유추 테스트
+- 데이터: https://github.com/SungjoonPark/KoreanWordVectors
+
 ```bash
 python scripts/test_sim_syn.py --ft_models_path=./models --test_settings=./settings/test_settings.csv
 ```
@@ -131,6 +133,8 @@ python scripts/test_sim_syn.py --ft_models_path=./models --test_settings=./setti
 
 
 ### 2) 감성 분석 (NSMC)
+- 데이터: https://github.com/e9t/nsmc
+
 ```bash
 python scripts/test_NSMC.py --ft_models_path=./models --test_settings=./settings/test_settings.csv --use_pretrained_embedding --mask_zero 
 ```
