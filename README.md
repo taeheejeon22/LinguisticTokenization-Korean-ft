@@ -1,3 +1,7 @@
+# 논문
+https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002815798
+전태희(2022). "한국어 텍스트의 토큰화 방법에 관한 언어학적 연구: fastText 단어 임베딩을 이용하여", 언어사실과 관점(연세대학교 언어정보연구원) 55, 309-354.
+
 # Requirements
 - OS: Ubuntu (16.04 이상)
 - Python: 3.8 이상
