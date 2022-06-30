@@ -28,6 +28,7 @@ pip install -r requirments.txt
 
 - Mecab-ko 설치는 다음 참조
   * https://konlpy.org/en/latest/install/
+
 - 가상 환경에 Mecab-ko 설치하기
   * 터미널에서 가상 환경 활성화 후 https://konlpy.org/en/latest/install/ 참조하여 Mecab-ko 설치
   * 가상 환경 활성화된 상태에서 아래 커맨드 입력
@@ -36,6 +37,8 @@ pip install -r requirments.txt
   cd mecab-python-0.996/
   python setup.py install
   ```
+
+  - 실제 MeCab-ko에 이용되는 코드는 본 repository의 _mecab.py
 
 
 ## 1. 임베딩 학습용 코퍼스 만들기
