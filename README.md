@@ -28,7 +28,7 @@ pip install -r requirments.txt
 
 - Mecab-ko 설치
   - KoNLPy 설치
-  * https://konlpy.org/en/latest/install/
+    * https://konlpy.org/en/latest/install/
 
   - 가상 환경에 Mecab-ko 설치하기
     * 터미널에서 가상 환경 활성화 후 https://konlpy.org/en/latest/install/ 참조하여 Mecab-ko 설치
