@@ -39,7 +39,7 @@ pip install -r requirments.txt
     python setup.py install
     ```
 
-  - 실제 MeCab-ko에 이용되는 코드는 본 repository의 _mecab.py
+  - 실제 실험에 이용되는 MeCab-ko 코드는 본 repository의 _mecab.py
 
 
 ## 1. 임베딩 학습용 코퍼스 만들기
