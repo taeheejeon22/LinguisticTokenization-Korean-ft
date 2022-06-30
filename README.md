@@ -200,5 +200,28 @@ http://127.0.0.1:16006  # 로컬의 16006 포트에서 수신
 ```
 
 
+# Citation
+## 국문
+@article{ART002815798,
+author={전태희},
+title={한국어 텍스트의 토큰화 방법에 관한 언어학적 연구 - fastText 단어 임베딩을 이용하여 -},
+journal={언어사실과 관점},
+issn={1738-1908},
+year={2022},
+volume={55},
+pages={309-354}
+}
+
+## 영문
+@article{jeon2022tokft,
+title={A linguistic study on tokenization methods for Korean text
+},
+author={Jeon, Taehee},
+journal={Language Facts and Perspectives},
+volume={55},
+pages={309--354},
+year={2022},
+issn={1738-1908},
+}
 
  
