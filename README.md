@@ -200,7 +200,7 @@ http://127.0.0.1:16006  # 로컬의 16006 포트에서 수신
 ```
 
 
-# Citation
+# Citation (BibTeX)
 ## 국문
 ```
 @article{ART002815798,
